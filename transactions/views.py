@@ -4,4 +4,8 @@ from django.http import request
 # Create your views here.
 
 def index(request):
-    return render(request, "base.html")
+    return render(request, "index.html")
+
+
+def add_expense(request):
+    return render(request, "index.html")
