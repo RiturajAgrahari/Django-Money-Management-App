@@ -6,13 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="afd9b41c-08ae-4cb0-89bc-1935db4a8ed3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash_flow/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cash_flow/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash_flow/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cash_flow/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactions/static/css/first.css" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/static/css/first.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactions/templates/add_expense.html" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/templates/add_expense.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactions/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactions/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transactions/templates/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/templates/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/templates/base_auth.html" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/templates/base_auth.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/transactions/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
