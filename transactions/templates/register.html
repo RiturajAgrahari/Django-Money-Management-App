@@ -13,22 +13,27 @@
             <div class="card-title">
                 <h4>Register for a free account</h4>
             </div>
-                <form action="POST">
+
+
+                <form action="{% url 'register' %}" method="post">
+                    {% csrf_token %}
+
+                {% include 'messages.html' %}
                     <div class="form-group">
-                        <input class="form-control form-control-sm" type="text" name="username" id="usernameField" placeholder="Username">
+                        <input class="form-control form-control-sm" type="text" name="username" id="usernameField" placeholder="Username" value="{{ fieldValue.username }}">
                         <div class="invalid-feedback" style="display: none" id="feedbackField">
                         </div>
                         <p class="text-sm text-success" id="usernameSuccessOutput"></p>
 
-                        <input class="form-control form-control-sm" type="email" name="email" id="emailField" placeholder="Email">
+                        <input class="form-control form-control-sm" type="email" name="email" id="emailField" placeholder="Email" value="{{ fieldValue.email}}">
                         <div class="invalid-feedback" style="display: none" id="emailfeedbackField">
                         </div>
                         <p class="text-sm text-success" id="emailSuccessOutput"></p>
 
                         <input class="form-control form-control-sm" type="password" name="password" id="passwordField" placeholder="Password">
-                        <small class="float-right">SHOW</small>
+                        <small class="float-right py-3" id="showPasswordToggle">SHOW</small>
                     </div>
-                    <input type="submit" value="Register" class="btn btn-block btn-primary">
+                    <input type="submit" value="Register" class="btn btn-block btn-primary submit-btn" id="submitButton">
                 </form>
             </div>
         </div>

@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+from django.contrib import messages
 
 DB_NAME = open("../api keys/money management credentials/name", "r").read()
 USERNAME = open("../api keys/money management credentials/user", "r").read()
@@ -46,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'transactions',
     'authentication',
+    'user_preferences',
 ]
 
 MIDDLEWARE = [
@@ -136,3 +138,16 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MESSAGE_TAGS = {
+    messages.ERROR : 'danger',
+}
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+# email stuff
+EMAIL_HOST = open('../api keys/money management credentials/EMAIL_HOST', "r").read()
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = open('../api keys/money management credentials/EMAIL_HOST_USER', "r").read()
+EMAIL_HOST_PASSWORD = open('../api keys/money management credentials/EMAIL_HOST_PASSWORD', "r").read()
