@@ -22,8 +22,6 @@ def index(request):
             currency_data.append({"name": k, 'value': v})
 
     if request.method == 'GET':
-
-
         return render(request, "preferences.html", {'currencies': currency_data, 'user_preferences': user_preferences})
 
     else:
