@@ -1,0 +1,10 @@
+.env
+.idea
+Lib/
+Scripts/
+pyvenv.cfg
+db.sqlite3
+manage.py
+cash_flow/
+migrations/
+__pycache__/
