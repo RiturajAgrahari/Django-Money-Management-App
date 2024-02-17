@@ -64,55 +64,6 @@ class RegistrationView(View):
                     user.is_active = False
                     user.save()
                     return redirect('login')
-                    # email_subject = 'Activate your Account'
-                    # email_body = 'Test'
-
-                    # email = EmailMessage(
-                    #     email_subject,
-                    #     email_body,
-                    #     'noreply@semycolon.com',
-                    #     [email],
-                    #     # ['bcc@example.com'],
-                    #     # reply_to=['another@example.com'],
-                    #     # headers={'Message-ID': 'foo'}
-                    # )
-                    # email.send(fail_silently=False)
-
-                    # import smtplib
-                    #
-                    # gmail_user = ''
-                    # gmail_app_password = ''
-                    #
-                    # sent_from = gmail_user
-                    # sent_to = [email]
-                    # sent_subject = "Hey Friends!"
-                    # sent_body = ("Hey, what's up? friend!\n\n"
-                    #              "I hope you have been well!\n"
-                    #              "\n"
-                    #              "Cheers,\n"
-                    #              "Jay\n")
-                    #
-                    # email_text = """\
-                    # From: %s
-                    # To: %s
-                    # Subject: %s
-                    #
-                    # %s
-                    # """ % (sent_from, ", ".join(sent_to), sent_subject, sent_body)
-                    #
-                    # try:
-                    #     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-                    #     server.ehlo()
-                    #     server.login(gmail_user, gmail_app_password)
-                    #     server.sendmail(sent_from, sent_to, email_text)
-                    #     server.close()
-                    #
-                    #     print('Email sent!')
-                    # except Exception as exception:
-                    #     print("Error: %s!\n\n" % exception)
-                    #
-                    # messages.success(request, "Your account is successfully created!")
-                    # return render(request, 'register.html')
 
         # messages.success(request, "Success Whatsapp success")
         # messages.warning(request, "Success Whatsapp warning")
