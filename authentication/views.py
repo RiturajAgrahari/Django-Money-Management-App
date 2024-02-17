@@ -60,8 +60,7 @@ class RegistrationView(View):
                 else:
                     user = User.objects.create_user(username=username, email=email)
                     user.set_password(password)
-
-                    user.is_active = False
+                    user.is_active = True
                     user.save()
                     return redirect('login')
 
