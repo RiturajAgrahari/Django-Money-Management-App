@@ -36,7 +36,7 @@ def index(request):
         currency = UserPreference.objects.get(user=request.user).currency
     except:
         messages.error(request, "Select Your preferred currency first!")
-        return render(request, 'preferences.html')
+        return redirect('preferences/')
 
     context = {
         'expenses': expenses,
